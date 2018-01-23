@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CCC"
+    android:orientation="horizontal"
+    android:weightSum="2"
+    tools:context="douglasspgyn.com.github.circularcountdownsample.MainActivity">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <douglasspgyn.com.github.circularcountdown.CircularCountdown
+            android:id="@+id/circularCountdownWithoutLoop"
+            android:layout_width="96dp"
+            android:layout_height="96dp" />
+
+        <douglasspgyn.com.github.circularcountdown.CircularCountdown
+            android:id="@+id/circularCountdownWithInfinityLoop"
+            android:layout_width="96dp"
+            android:layout_height="96dp" />
+
+        <douglasspgyn.com.github.circularcountdown.CircularCountdown
+            android:id="@+id/circularCountdownWithLoopDisablingBefore"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            app:countdownBackgroundColor="#000"
+            app:countdownForegroundColor="#000"
+            app:countdownTextColor="#000"
+            app:countdownTextSize="6sp" />
+
+        <douglasspgyn.com.github.circularcountdown.CircularCountdown
+            android:id="@+id/circularCountdownWithLoopDisablingAfter"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            app:countdownTextSize="6sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <douglasspgyn.com.github.circularcountdown.CircularCountdown
+            android:id="@+id/circularCountdownWithLoopThreeCycles"
+            android:layout_width="96dp"
+            android:layout_height="96dp" />
+
+        <douglasspgyn.com.github.circularcountdown.CircularCountdown
+            android:id="@+id/circularCountdownWithouthLoopThreeCycles"
+            android:layout_width="96dp"
+            android:layout_height="96dp" />
+
+        <douglasspgyn.com.github.circularcountdown.CircularCountdown
+            android:id="@+id/circularCountdownWithouthLoopThreeCycles2"
+            android:layout_width="96dp"
+            android:layout_height="96dp" />
+
+        <douglasspgyn.com.github.circularcountdown.CircularCountdown
+            android:id="@+id/withoutLoopDisabledAfterCyclesUpdating"
+            android:layout_width="96dp"
+            android:layout_height="96dp" />
+
+        <douglasspgyn.com.github.circularcountdown.CircularCountdown
+            android:id="@+id/withoutLoopDisabledAfterCyclesUpdating2"
+            android:layout_width="96dp"
+            android:layout_height="96dp" />
+    </LinearLayout>
+</LinearLayout>
